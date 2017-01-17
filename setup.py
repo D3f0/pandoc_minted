@@ -11,7 +11,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
-    # TODO: put package requirements here
+    'pandocfilters'
 ]
 
 test_requirements = [
@@ -33,7 +33,7 @@ setup(
                  'pandoc_minted'},
     entry_points={
         'console_scripts': [
-            'pandoc_minted=pandoc_minted.cli:main'
+            'pandoc-minted=pandoc_minted.cli:main'
         ]
     },
     include_package_data=True,
